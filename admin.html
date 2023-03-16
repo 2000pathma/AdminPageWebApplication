@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Admin-Theme Preview-Start Bootstrap</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!---Boostrap files-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <style>
+       #demo{
+        width:25%;
+        height:100%;
+      }
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-1 me-5" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler d-flex me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <form class="d-inline-block">
+          <div class="input-group me-5">
+            <input class="form-control  ps-4 " type="text" placeholder="Search for...">
+            <button class="btn btn-primary " type="button">
+            <i class="fas fa-search"></i>
+            </button>
+          </div>
+          </form>
+          <ul class="navbar-nav me-5">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white-50" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Activity Log</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      </nav>
+      <aside>
+        <div class="offcanvas offcanvas-md offcanvas-start bg-dark " id="demo">
+          <div class="container text-secondary  mt-5">
+           <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-secondary disabled" href="#">CORE</a>
+            </li>
+              <li class="nav-item input-group">
+                <i class="fas fa-tachometer-alt mt-3 disabled"></i><a class="nav-link text-white-50 mt-1" href="#Dashboard">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div class="container text-secondary  mt-2">
+            <ul class="nav flex-column">
+             <li class="nav-item">
+               <a class="nav-link text-secondary disabled" href="#">INTERFACE</a>
+             </li>
+               <li class="nav-item input-group">
+                 <i class="fas fa-columns mt-3 disabled"></i><a class="nav-link text-white-50 mt-1" href="#">Layouts</a><i class="fas fa-angle-down mt-3" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"></i>
+               </li>
+             </ul>
+             <div class="collapse" id="collapseLayouts">
+              <nav class="sb-sidenav-menu-nested nav">
+                  <a class="nav-link text-white-50 mt-1" href="#">Static Navigation</a>
+                  <a class="nav-link text-white-50 mt-1" href="#">Light Sidenav</a>
+              </nav>
+              </div>
+              <ul class="nav flex-column">
+                <li class="nav-item input-group">
+                  <i class="fas fa-book-open mt-3 disabled"></i><a class="nav-link text-white-50 mt-1" href="#">Pages</a><i class="fas fa-angle-down mt-3" data-bs-toggle="collapse" data-bs-target="#collapsepages"></i>
+                </li>
+                <div class="collapse" id="collapsepages">
+                  <nav class="sb-sidenav-menu-nested nav">
+                      <a class="nav-link text-white-50 mt-1" href="#">Authentication</a><i class="fas fa-angle-down mt-3" data-bs-toggle="collapse" data-bs-target="#collapseauthentication"></i>
+                      <div class="collapse" id="collapseauthentication">
+                        <ul class="sb-sidenav-menu-nested nav input-group">
+                          <li><a class="nav-link text-white-50 " href="#">Login</a></li>
+                          <li><a class="nav-link text-white-50  " href="#">Register</a></li>  
+                          <li><a class="nav-link text-white-50" href="#">Forgot Password</a></li>  
+                        </ul>
+                   </div>
+                      <a class="nav-link text-white-50 mt-1" href="#">Error</a><i class="fas fa-angle-down mt-3" data-bs-toggle="collapse" data-bs-target="#collapseerror"></i>
+                      <div class="collapse" id="collapseerror">
+                        <ul class="sb-sidenav-menu-nested nav">
+                          <li><a class="nav-link text-white-50 " href="#">401 Page</a></li>
+                          <li><a class="nav-link text-white-50  " href="#">402 Page</a></li>  
+                          <li><a class="nav-link text-white-50" href="#">500 Page</a></li>  
+                        </ul>
+                   </div>
+                  </nav>
+                  </div>
+              </ul>
+              <div class="container text-secondary  mt-4">
+                <ul class="nav flex-column">
+                 <li class="nav-item">
+                   <a class="nav-link text-secondary disabled" href="#">ADDONS</a>
+                 </li>
+                   <li class="nav-item input-group">
+                     <i class="fas fa-chart-area mt-3 disabled"></i>
+                     <a class="nav-link text-white-50 mt-1" href="#chart">Charts</a>
+                  </li>
+                   <li class="nav-item input-group">
+                    <i class="fas fa-table mt-3 disabled"></i>
+                    <a class="nav-link text-white-50 mt-1" href="#table">Tables</a>
+                 </li>
+                 </ul>
+        </div>
+        <div class="sb-sidenav-footer bg-secondary mt-5 text-white-50 d-flex flex-column">
+          <div class="small ">Logged in as:</div>
+          Start Bootstrap
+      </div>
+      </aside>
+      <section>
+      <div class="container px-4" id="Dashboard">
+        <h1 class="mt-4">Dashboard</h1>
+        <p class="text-muted">Dashboard</p>
+        <div class="row">
+          <div class="col-sm-3  p-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">Primary Card</div> 
+              <div class="card-footer input-group">
+                <a href="#" class="card-link text-white">View-Details</a><i class="fas fa-angle-right mt-1  ms-5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-3">
+            <div class="card bg-warning text-white">
+              <div class="card-body">Warning Card</div> 
+              <div class="card-footer input-group">
+                <a href="#" class="card-link text-white">View-Details</a><i class="fas fa-angle-right mt-1  ms-5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-3">
+            <div class="card bg-success text-white">
+              <div class="card-body">Success Card</div> 
+              <div class="card-footer input-group">
+                <a href="#" class="card-link text-white">View-Details</a><i class="fas fa-angle-right mt-1  ms-5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-3">
+            <div class="card bg-danger text-white">
+              <div class="card-body">Danger Card</div> 
+              <div class="card-footer  input-group">
+                <a href="#" class="card-link text-white">View-Details</a><i class="fas fa-angle-right mt-1  ms-5"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-2 px-4" >
+        <div class="row" id="chart">
+          <div class="col-sm-6 ">
+            <div class="card">
+              <div class="card-header"><i class="fas fa-chart-area"></i>
+                Area Chart Example</div>
+              <div class="card-body">
+                <img class="img-fluid" src="chart1.PNG" alt="chart1">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ">
+            <div class="card">
+              <div class="card-header"><i class="fas fa-chart-bar"></i>
+                Bar Chart Example</div>
+              <div class="card-body">
+                <img class="img-fluid" src="chart2.PNG" alt="chart2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-4 px-4">
+      
+          <div class="card">
+            <div class="card-header"><i class="fas fa-table"></i>
+               Data Table Example
+            </div>
+            <div class="card-body">
+              <form class="row">
+              <div class="col-sm-1 col-md-2">
+                <select class="form-select">
+                  <option>10</option>
+                  <option>5</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                </select>
+              </div>
+              <div class="col-sm-9 col-md-4">                
+                <label class="form-label">entries per page</label>
+              </div>
+              <div class="col-sm-2 col-md-6"> 
+                <input type="text" class="form-control" placeholder="Search">
+              </div> 
+              </form>
+                <div class="table-responsive-sm table-responsive-md table-responsive-lg mt-4" id="table">
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>$170,750</td>
+                        </tr>
+                        <tr>
+                            <td>Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009/01/12</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr>
+                            <td>Cedric Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012/03/29</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr>
+                            <td>Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008/11/28</td>
+                            <td>$162,700</td>
+                        </tr>
+                        <tr>
+                            <td>Brielle Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2012/12/02</td>
+                            <td>$372,000</td>
+                        </tr>
+                        <tr>
+                            <td>Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td>2012/08/06</td>
+                            <td>$137,500</td>
+                        </tr>
+                        <tr>
+                            <td>Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td>2010/10/14</td>
+                            <td>$327,900</td>
+                        </tr>
+                        <tr>
+                            <td>Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009/09/15</td>
+                            <td>$205,500</td>
+                        </tr>
+                        <tr>
+                            <td>Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td>2008/12/13</td>
+                            <td>$103,600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+               <div class="row">
+                <p class="col-sm-4 col-md-6">Showing 1 to 10 of 57 entries</p>
+                <ul class="pagination col-sm-8 col-md-6 justify-content-start">
+                  <li class="page-item active"><a class="page-link" href="#"><</a></li>
+                  <li class="page-item "><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item "><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">></a></li>
+                </ul>
+              </div>
+      </div>
+     </div>
+    </section>
+    <footer class="py-4 bg-light mt-auto">
+      <div class="container px-4">
+          <div class="d-flex align-items-center justify-content-between small">
+              <div class="text-muted">Copyright &copy; Your Website 2021</div>
+              <div>
+                  <a href="#">Privacy Policy</a>
+                  &middot;
+                  <a href="#">Terms &amp; Conditions</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>
